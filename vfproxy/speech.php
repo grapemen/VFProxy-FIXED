@@ -12,11 +12,11 @@ $email_arr = array($email1, "undefined", "null");
 $email = $email_arr[0];
 ini_set('user_agent', 'Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36');
 
-   $url = 'https://api.voiceforge.com:443/swift_engine?HTTP-X-API-KEY=9a272b4&voice=' . $vName . '&msg=' . urlencode($text) . '&email=' . $email;
+   $url = 'https://gospeech.replit.app:443/service/voiceforge_makewav?voice=' . $vName . '&text=' . urlencode($text);
    
    $filename = md5($vName . $text . date("mdyhisA"));
    
-   $wavname = "swift_engine(" . $filename . ").wav";
+   $wavname = "voiceforge_makewav(" . $filename . ").wav";
    
    $mp3name = $filename . ".mp3";
    
