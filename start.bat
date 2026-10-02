@@ -14,5 +14,5 @@ echo Running php.exe...
 PING -n 3 127.0.0.1>nul
 echo:
 start "" "http://localhost:%PORT%/vfproxy/speech.php?voice=David&msg=Hello World!"
-call .\php\php.exe -S 127.0.0.1:%PORT%
+start .\php\php.exe -S 127.0.0.1:%PORT%
 pause & exit
